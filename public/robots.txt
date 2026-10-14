@@ -1,0 +1,27 @@
+# Robots.txt for https://hamid-resume.web.app/
+User-agent: *
+Allow: /
+
+# Explicit AI Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://hamid-resume.web.app/sitemap.xml
