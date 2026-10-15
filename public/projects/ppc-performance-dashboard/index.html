@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPC Performance Dashboard - KPI Reporting (Streamlit)</title>
+<meta name="description" content="PPC Performance Dashboard is a Streamlit application for analyzing PPC campaign KPIs. It normalizes messy ad-platform exports, applies campaign and da">
+
+<link rel="canonical" href="https://hamid-resume.web.app/projects/ppc-performance-dashboard/">
+<meta name="theme-color" content="#070b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muhammad Hamid - Digital Marketing Expert">
+<meta property="og:title" content="PPC Performance Dashboard - KPI Reporting (Streamlit)">
+<meta property="og:description" content="PPC Performance Dashboard is a Streamlit application for analyzing PPC campaign KPIs. It normalizes messy ad-platform exports, applies campaign and da">
+<meta property="og:url" content="https://hamid-resume.web.app/projects/ppc-performance-dashboard/">
+<meta property="og:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PPC Performance Dashboard - KPI Reporting (Streamlit)">
+<meta name="twitter:description" content="PPC Performance Dashboard is a Streamlit application for analyzing PPC campaign KPIs. It normalizes messy ad-platform exports, applies campaign and da">
+<meta name="twitter:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Lahore">
+<meta name="geo.position" content="31.5204;74.3587">
+<meta name="ICBM" content="31.5204, 74.3587">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://hamid-resume.web.app/#person","name":"Muhammad Hamid","url":"https://hamid-resume.web.app/","image":"https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp","jobTitle":"Digital Marketing Expert & MarTech Engineer","address":{"@type":"PostalAddress","streetAddress":"Bahria Complex, Mall Road","addressLocality":"Lahore","addressRegion":"Punjab","postalCode":"54000","addressCountry":"PK"},"alumniOf":[{"@type":"EducationalOrganization","name":"University of the Punjab","sameAs":"https://www.pu.edu.pk/"},{"@type":"EducationalOrganization","name":"Punjab Board of Technical Education, Lahore"}],"knowsAbout":["Search Engine Optimization (SEO)","Technical SEO","Local SEO","Generative Engine Optimization (GEO)","Google Ads & PPC Management","Meta Ads & Paid Social","Conversion Tracking & Server-Side CAPI","WordPress & WooCommerce Development","Shopify E-Commerce Optimization","Core Web Vitals & Web Performance","Python MarTech Automation","n8n Workflow Automation","Marketing Analytics & Attribution"],"sameAs":["https://github.com/hamid-digitalmarketer","https://www.linkedin.com/in/muhammad-hamid-digital-marketing"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://hamid-resume.web.app/#website","name":"Muhammad Hamid - Professional Digital Marketing & MarTech Portfolio","url":"https://hamid-resume.web.app/","inLanguage":"en","publisher":{"@id":"https://hamid-resume.web.app/#person"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hamid-resume.web.app/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://hamid-resume.web.app/projects/"},{"@type":"ListItem","position":3,"name":"ppc-performance-dashboard","item":"https://hamid-resume.web.app/projects/ppc-performance-dashboard/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://hamid-resume.web.app/projects/ppc-performance-dashboard/#software","name":"ppc-performance-dashboard","url":"https://hamid-resume.web.app/projects/ppc-performance-dashboard/","applicationCategory":"BusinessApplication","operatingSystem":"Cross-platform","description":"PPC Performance Dashboard is a Streamlit application for analyzing PPC campaign KPIs. It normalizes messy ad-platform exports, applies campaign and date-range filters, computes period comparisons and renders charts with Plotly. A bundled sample dataset provides an instant demo.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@id":"https://hamid-resume.web.app/#person"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it perform incrementality analysis?","acceptedAnswer":{"@type":"Answer","text":"No. It reports platform-reported metrics as-is. The repository explicitly documents this limitation; causal incrementality is handled by AI Marketing Mix Copilot."}},{"@type":"Question","name":"What data can I load?","acceptedAnswer":{"@type":"Answer","text":"You can use the bundled sample data or upload your own campaign exports; unknown columns are ignored rather than guessed."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation"><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li><li><a class="nav-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">WhatsApp</a></li></ul></nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Home</a></li><li><a href="../../projects/index.html">Projects</a></li><li aria-current="page">ppc-performance-dashboard</li></ol></nav>
+      <h1>PPC Performance Dashboard - KPI Reporting (Streamlit)</h1>
+      <p class="lead">A Streamlit dashboard for clean PPC KPI analysis and period comparison.</p>
+      <div class="project-actions">
+        <p class="no-demo-note">No hosted demo for this project — it runs locally. See install instructions below.</p>
+        <p><a class="btn btn-ghost" href="https://github.com/hamid-digitalmarketer/ppc-performance-dashboard" target="_blank" rel="noopener noreferrer">View Source on GitHub →</a></p>
+        <a class="btn btn-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20ppc-performance-dashboard%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Discuss This Project on WhatsApp</a>
+      </div>
+      <p class="project-meta"><span class="pill">Google Ads &amp; PPC</span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>PPC Performance Dashboard is a Streamlit application for analyzing PPC campaign KPIs. It normalizes messy ad-platform exports, applies campaign and date-range filters, computes period comparisons and renders charts with Plotly. A bundled sample dataset provides an instant demo.</p>
+      
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Problem It Solves</h2>
+      <p>Raw ad-platform exports vary by platform and are messy to analyze. Managers need clean, comparable KPI views to spot performance changes quickly.</p>
+      <h3>Target Users</h3>
+      <ul class="check-list"><li>PPC managers and analysts</li><li>Agencies reporting on client accounts</li><li>Growth teams</li></ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Key Features</h2>
+      <ul class="check-list"><li>Column normalization for varied exports</li><li>Campaign and date-range filters</li><li>Period-over-period KPI comparison</li><li>Plotly charts and aggregate reporting</li><li>Bundled sample data for instant demo</li><li>Test suite covering normalization, KPI math and filters</li></ul>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Technologies</h2>
+      <ul class="tech-list"><li class="tech-item">Python</li><li class="tech-item">Streamlit</li><li class="tech-item">Pandas</li><li class="tech-item">Plotly</li><li class="tech-item">pytest</li></ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Contribution &amp; Skills</h2>
+      <p>Sole author. Built the data normalization layer, KPI calculations, filter logic, period comparison and Streamlit interface.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Install &amp; Usage</h2>
+      <div class="install-block"><h3>Install</h3><pre><code>python -m venv venv
+# Windows: venv\Scripts\activate  |  macOS/Linux: source venv/bin/activate
+pip install -r requirements.txt</code></pre></div><div class="install-block"><h3>Run</h3><pre><code>streamlit run app.py
+# choose bundled sample data for an instant demo</code></pre></div>
+      <p><a href="https://github.com/hamid-digitalmarketer/ppc-performance-dashboard" target="_blank" rel="noopener noreferrer">Full documentation lives in the repository README →</a></p>
+    </div>
+  </section>
+
+  <section class="section section-alt"><div class="container"><h2>FAQ</h2><details class="faq-item"><summary>Does it perform incrementality analysis?</summary><p>No. It reports platform-reported metrics as-is. The repository explicitly documents this limitation; causal incrementality is handled by AI Marketing Mix Copilot.</p></details><details class="faq-item"><summary>What data can I load?</summary><p>You can use the bundled sample data or upload your own campaign exports; unknown columns are ignored rather than guessed.</p></details></div></section>
+
+  <section class="section"><div class="container"><h2>Related Projects</h2><div class="project-grid"><a class="project-card" href="../ppc-waste-detector/" data-project-card><span class="pc-media"><img src="../../images/projects/ppc-waste-detector.png" alt="Screenshot of the ppc-waste-detector project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Google Ads &amp; PPC</span><h3>ppc-waste-detector</h3><p>Find wasted ad spend: query bleed, cannibalization, junk placements and click fraud.</p></span></a><a class="project-card" href="../ai-marketing-mix-copilot/" data-project-card><span class="pc-media"><img src="../../images/projects/ai-marketing-mix-copilot.png" alt="Screenshot of the ai-marketing-mix-copilot project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">AI &amp; Automation</span><h3>ai-marketing-mix-copilot</h3><p>Bayesian media-mix modeling with causal incrementality and budget simulation.</p></span></a><a class="project-card" href="../meta-lead-quality-analyzer/" data-project-card><span class="pc-media"><img src="../../images/projects/meta-lead-quality-analyzer.png" alt="Screenshot of the meta-lead-quality-analyzer project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Meta Ads</span><h3>meta-lead-quality-analyzer</h3><p>Score Meta lead quality and feed offline conversions back to the algorithm.</p></span></a></div></div></section>
+
+  <section class="section cta-band">
+    <div class="container">
+      <h2>Need Help With ppc-performance-dashboard or Similar Tooling?</h2>
+      <p>I build custom MarTech tools, audits and automation for teams. Start the conversation on WhatsApp.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20ppc-performance-dashboard%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Contact Me on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+      <p class="footer-tag">Digital Marketing Expert &amp; MarTech Engineer — SEO, Google Ads, Meta Ads, GEO &amp; Web Development.</p>
+    </div>
+    <nav aria-label="Footer navigation"><ul class="footer-links"><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li></ul></nav>
+    <div class="footer-contact">
+      <p><strong>Contact via WhatsApp</strong></p>
+      <p><a class="wa-link" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">+92 316 7417135</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Muhammad Hamid. Built with a passion for measurable growth.</p>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20ppc-performance-dashboard%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Contact Muhammad Hamid on WhatsApp">💬<span class="sr-only">WhatsApp</span></a>
+<script src="../../js/main.js" defer></script>
+</body>
+</html>

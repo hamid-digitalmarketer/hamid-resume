@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit Tool - On-Page SEO Crawler (Streamlit)</title>
+<meta name="description" content="SEO Audit Tool is a Streamlit application that crawls a website and reports on-page SEO issues with interactive Pandas/Plotly charts and CSV export. I">
+
+<link rel="canonical" href="https://hamid-resume.web.app/projects/seo-audit-tool/">
+<meta name="theme-color" content="#070b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muhammad Hamid - Digital Marketing Expert">
+<meta property="og:title" content="SEO Audit Tool - On-Page SEO Crawler (Streamlit)">
+<meta property="og:description" content="SEO Audit Tool is a Streamlit application that crawls a website and reports on-page SEO issues with interactive Pandas/Plotly charts and CSV export. I">
+<meta property="og:url" content="https://hamid-resume.web.app/projects/seo-audit-tool/">
+<meta property="og:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SEO Audit Tool - On-Page SEO Crawler (Streamlit)">
+<meta name="twitter:description" content="SEO Audit Tool is a Streamlit application that crawls a website and reports on-page SEO issues with interactive Pandas/Plotly charts and CSV export. I">
+<meta name="twitter:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Lahore">
+<meta name="geo.position" content="31.5204;74.3587">
+<meta name="ICBM" content="31.5204, 74.3587">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://hamid-resume.web.app/#person","name":"Muhammad Hamid","url":"https://hamid-resume.web.app/","image":"https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp","jobTitle":"Digital Marketing Expert & MarTech Engineer","address":{"@type":"PostalAddress","streetAddress":"Bahria Complex, Mall Road","addressLocality":"Lahore","addressRegion":"Punjab","postalCode":"54000","addressCountry":"PK"},"alumniOf":[{"@type":"EducationalOrganization","name":"University of the Punjab","sameAs":"https://www.pu.edu.pk/"},{"@type":"EducationalOrganization","name":"Punjab Board of Technical Education, Lahore"}],"knowsAbout":["Search Engine Optimization (SEO)","Technical SEO","Local SEO","Generative Engine Optimization (GEO)","Google Ads & PPC Management","Meta Ads & Paid Social","Conversion Tracking & Server-Side CAPI","WordPress & WooCommerce Development","Shopify E-Commerce Optimization","Core Web Vitals & Web Performance","Python MarTech Automation","n8n Workflow Automation","Marketing Analytics & Attribution"],"sameAs":["https://github.com/hamid-digitalmarketer","https://www.linkedin.com/in/muhammad-hamid-digital-marketing"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://hamid-resume.web.app/#website","name":"Muhammad Hamid - Professional Digital Marketing & MarTech Portfolio","url":"https://hamid-resume.web.app/","inLanguage":"en","publisher":{"@id":"https://hamid-resume.web.app/#person"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hamid-resume.web.app/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://hamid-resume.web.app/projects/"},{"@type":"ListItem","position":3,"name":"seo-audit-tool","item":"https://hamid-resume.web.app/projects/seo-audit-tool/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://hamid-resume.web.app/projects/seo-audit-tool/#software","name":"seo-audit-tool","url":"https://hamid-resume.web.app/projects/seo-audit-tool/","applicationCategory":"BusinessApplication","operatingSystem":"Cross-platform","description":"SEO Audit Tool is a Streamlit application that crawls a website and reports on-page SEO issues with interactive Pandas/Plotly charts and CSV export. It is designed for fast, accessible audits of small and medium sites.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@id":"https://hamid-resume.web.app/#person"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this the same as SEO Doctor?","acceptedAnswer":{"@type":"Answer","text":"No. SEO Audit Tool is a lighter Streamlit app for quick on-page checks, while SEO Doctor is a deeper CLI crawler with 10 technical checks and crawl comparison."}},{"@type":"Question","name":"Is there a hosted demo?","acceptedAnswer":{"@type":"Answer","text":"No. The app runs locally with streamlit run app.py."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation"><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li><li><a class="nav-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">WhatsApp</a></li></ul></nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Home</a></li><li><a href="../../projects/index.html">Projects</a></li><li aria-current="page">seo-audit-tool</li></ol></nav>
+      <h1>SEO Audit Tool - On-Page SEO Crawler (Streamlit)</h1>
+      <p class="lead">A lightweight Streamlit app for quick on-page SEO audits with charts and CSV export.</p>
+      <div class="project-actions">
+        <p class="no-demo-note">No hosted demo for this project — it runs locally. See install instructions below.</p>
+        <p><a class="btn btn-ghost" href="https://github.com/hamid-digitalmarketer/seo-audit-tool" target="_blank" rel="noopener noreferrer">View Source on GitHub →</a></p>
+        <a class="btn btn-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20seo-audit-tool%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Discuss This Project on WhatsApp</a>
+      </div>
+      <p class="project-meta"><span class="pill">Technical SEO</span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>SEO Audit Tool is a Streamlit application that crawls a website and reports on-page SEO issues with interactive Pandas/Plotly charts and CSV export. It is designed for fast, accessible audits of small and medium sites.</p>
+      
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Problem It Solves</h2>
+      <p>Small businesses and freelancers rarely have access to enterprise SEO suites. They need a simple tool that turns a URL into a prioritized list of fixable on-page issues.</p>
+      <h3>Target Users</h3>
+      <ul class="check-list"><li>Small business owners</li><li>Freelance SEO practitioners</li><li>Marketing teams needing quick spot checks</li></ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Key Features</h2>
+      <ul class="check-list"><li>URL crawl with configurable limits</li><li>On-page SEO checks (titles, meta, headings, images, canonicals)</li><li>Interactive charts via Pandas and Plotly</li><li>CSV export of findings</li><li>Works offline against bundled sample input for testing</li></ul>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Technologies</h2>
+      <ul class="tech-list"><li class="tech-item">Python</li><li class="tech-item">Streamlit</li><li class="tech-item">Pandas</li><li class="tech-item">Plotly</li><li class="tech-item">Requests</li></ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Contribution &amp; Skills</h2>
+      <p>Sole author. Built the crawler, the audit rule set, the Streamlit UI and the charting and export layers.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Install &amp; Usage</h2>
+      <div class="install-block"><h3>Install</h3><pre><code>python -m venv venv
+# Windows: venv\Scripts\activate  |  macOS/Linux: source venv/bin/activate
+pip install -r requirements.txt</code></pre></div><div class="install-block"><h3>Run</h3><pre><code>streamlit run app.py</code></pre></div>
+      <p><a href="https://github.com/hamid-digitalmarketer/seo-audit-tool" target="_blank" rel="noopener noreferrer">Full documentation lives in the repository README →</a></p>
+    </div>
+  </section>
+
+  <section class="section section-alt"><div class="container"><h2>FAQ</h2><details class="faq-item"><summary>Is this the same as SEO Doctor?</summary><p>No. SEO Audit Tool is a lighter Streamlit app for quick on-page checks, while SEO Doctor is a deeper CLI crawler with 10 technical checks and crawl comparison.</p></details><details class="faq-item"><summary>Is there a hosted demo?</summary><p>No. The app runs locally with streamlit run app.py.</p></details></div></section>
+
+  <section class="section"><div class="container"><h2>Related Projects</h2><div class="project-grid"><a class="project-card" href="../seo-doctor/" data-project-card><span class="pc-media"><img src="../../images/projects/seo-doctor.png" alt="Screenshot of the seo-doctor project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Technical SEO</span><h3>seo-doctor</h3><p>A fast, repeatable technical SEO crawler with 10 audit checks.</p></span></a><a class="project-card" href="../ecommerce-seo-optimizer/" data-project-card><span class="pc-media"><div class="pc-placeholder">EO</div></span><span class="pc-body"><span class="pc-cat">Technical SEO</span><h3>ecommerce-seo-optimizer</h3><p>Scale on-page SEO for large e-commerce product catalogs.</p></span></a><a class="project-card" href="../geo-visibility-lab/" data-project-card><span class="pc-media"><img src="../../images/projects/geo-visibility-lab.png" alt="Screenshot of the geo-visibility-lab project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Technical SEO</span><h3>geo-visibility-lab</h3><p>Track local search visibility with a 5x5 geo-grid and NAP audits.</p></span></a></div></div></section>
+
+  <section class="section cta-band">
+    <div class="container">
+      <h2>Need Help With seo-audit-tool or Similar Tooling?</h2>
+      <p>I build custom MarTech tools, audits and automation for teams. Start the conversation on WhatsApp.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20seo-audit-tool%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Contact Me on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+      <p class="footer-tag">Digital Marketing Expert &amp; MarTech Engineer — SEO, Google Ads, Meta Ads, GEO &amp; Web Development.</p>
+    </div>
+    <nav aria-label="Footer navigation"><ul class="footer-links"><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li></ul></nav>
+    <div class="footer-contact">
+      <p><strong>Contact via WhatsApp</strong></p>
+      <p><a class="wa-link" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">+92 316 7417135</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Muhammad Hamid. Built with a passion for measurable growth.</p>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20seo-audit-tool%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Contact Muhammad Hamid on WhatsApp">💬<span class="sr-only">WhatsApp</span></a>
+<script src="../../js/main.js" defer></script>
+</body>
+</html>

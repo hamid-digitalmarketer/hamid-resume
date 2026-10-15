@@ -1,0 +1,32 @@
+# Muhammad Hamid - Digital Marketing Expert & MarTech Engineer
+
+> Digital marketing expert and MarTech engineer in Lahore, Pakistan. Technical SEO, local SEO, GEO (Generative Engine Optimization), Google Ads, Meta Ads, server-side conversion tracking, and open-source MarTech tooling (Python, FastAPI, Streamlit).
+
+## Key pages
+
+- [Homepage](https://hamid-resume.web.app/): Resume, experience, certifications, FAQ
+- [About](https://hamid-resume.web.app/about/): Career summary and experience timeline
+- [Projects](https://hamid-resume.web.app/projects/): Directory of all 11 open-source projects
+- [Skills](https://hamid-resume.web.app/skills/): Skill map and tools
+- [Services](https://hamid-resume.web.app/services/): SEO, Google Ads, Meta Ads, web development
+- [Contact](https://hamid-resume.web.app/contact/): WhatsApp-only contact
+
+## Projects (open source on GitHub)
+GitHub profile: https://github.com/hamid-digitalmarketer
+
+- [hamid-resume](https://hamid-resume.web.app/projects/hamid-resume/): The official resume and personal brand website you are viewing. Repository: https://github.com/hamid-digitalmarketer/hamid-resume Live demo: https://hamid-resume.web.app/
+- [ai-marketing-growth-os](https://hamid-resume.web.app/projects/ai-marketing-growth-os/): An agentic marketing operating system with governed AI agents. Repository: https://github.com/hamid-digitalmarketer/ai-marketing-growth-os
+- [ai-marketing-mix-copilot](https://hamid-resume.web.app/projects/ai-marketing-mix-copilot/): Bayesian media-mix modeling with causal incrementality and budget simulation. Repository: https://github.com/hamid-digitalmarketer/ai-marketing-mix-copilot
+- [seo-doctor](https://hamid-resume.web.app/projects/seo-doctor/): A fast, repeatable technical SEO crawler with 10 audit checks. Repository: https://github.com/hamid-digitalmarketer/seo-doctor
+- [geo-visibility-lab](https://hamid-resume.web.app/projects/geo-visibility-lab/): Track local search visibility with a 5x5 geo-grid and NAP audits. Repository: https://github.com/hamid-digitalmarketer/geo-visibility-lab
+- [conversion-tracking-doctor](https://hamid-resume.web.app/projects/conversion-tracking-doctor/): Diagnose broken conversion tracking and data quality across GA4, Ads and Meta CAPI. Repository: https://github.com/hamid-digitalmarketer/conversion-tracking-doctor
+- [meta-lead-quality-analyzer](https://hamid-resume.web.app/projects/meta-lead-quality-analyzer/): Score Meta lead quality and feed offline conversions back to the algorithm. Repository: https://github.com/hamid-digitalmarketer/meta-lead-quality-analyzer
+- [ppc-waste-detector](https://hamid-resume.web.app/projects/ppc-waste-detector/): Find wasted ad spend: query bleed, cannibalization, junk placements and click fraud. Repository: https://github.com/hamid-digitalmarketer/ppc-waste-detector
+- [seo-audit-tool](https://hamid-resume.web.app/projects/seo-audit-tool/): A lightweight Streamlit app for quick on-page SEO audits with charts and CSV export. Repository: https://github.com/hamid-digitalmarketer/seo-audit-tool
+- [ppc-performance-dashboard](https://hamid-resume.web.app/projects/ppc-performance-dashboard/): A Streamlit dashboard for clean PPC KPI analysis and period comparison. Repository: https://github.com/hamid-digitalmarketer/ppc-performance-dashboard
+- [ecommerce-seo-optimizer](https://hamid-resume.web.app/projects/ecommerce-seo-optimizer/): Scale on-page SEO for large e-commerce product catalogs. Repository: https://github.com/hamid-digitalmarketer/ecommerce-seo-optimizer
+
+## Contact
+
+- WhatsApp (only public contact): https://wa.me/923167417135
+- Location: Lahore, Pakistan

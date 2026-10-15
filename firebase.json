@@ -6,7 +6,138 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "cleanUrls": false,
+    "trailingSlash": true,
+    "redirects": [
+      {
+        "source": "/about",
+        "destination": "/about/",
+        "type": 301
+      },
+      {
+        "source": "/projects",
+        "destination": "/projects/",
+        "type": 301
+      },
+      {
+        "source": "/skills",
+        "destination": "/skills/",
+        "type": 301
+      },
+      {
+        "source": "/services",
+        "destination": "/services/",
+        "type": 301
+      },
+      {
+        "source": "/services/seo",
+        "destination": "/services/seo/",
+        "type": 301
+      },
+      {
+        "source": "/services/google-ads",
+        "destination": "/services/google-ads/",
+        "type": 301
+      },
+      {
+        "source": "/services/meta-ads",
+        "destination": "/services/meta-ads/",
+        "type": 301
+      },
+      {
+        "source": "/services/web-development",
+        "destination": "/services/web-development/",
+        "type": 301
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact/",
+        "type": 301
+      },
+      {
+        "source": "/projects/hamid-resume",
+        "destination": "/projects/hamid-resume/",
+        "type": 301
+      },
+      {
+        "source": "/projects/ai-marketing-growth-os",
+        "destination": "/projects/ai-marketing-growth-os/",
+        "type": 301
+      },
+      {
+        "source": "/projects/ai-marketing-mix-copilot",
+        "destination": "/projects/ai-marketing-mix-copilot/",
+        "type": 301
+      },
+      {
+        "source": "/projects/seo-doctor",
+        "destination": "/projects/seo-doctor/",
+        "type": 301
+      },
+      {
+        "source": "/projects/geo-visibility-lab",
+        "destination": "/projects/geo-visibility-lab/",
+        "type": 301
+      },
+      {
+        "source": "/projects/conversion-tracking-doctor",
+        "destination": "/projects/conversion-tracking-doctor/",
+        "type": 301
+      },
+      {
+        "source": "/projects/meta-lead-quality-analyzer",
+        "destination": "/projects/meta-lead-quality-analyzer/",
+        "type": 301
+      },
+      {
+        "source": "/projects/ppc-waste-detector",
+        "destination": "/projects/ppc-waste-detector/",
+        "type": 301
+      },
+      {
+        "source": "/projects/seo-audit-tool",
+        "destination": "/projects/seo-audit-tool/",
+        "type": 301
+      },
+      {
+        "source": "/projects/ppc-performance-dashboard",
+        "destination": "/projects/ppc-performance-dashboard/",
+        "type": 301
+      },
+      {
+        "source": "/projects/ecommerce-seo-optimizer",
+        "destination": "/projects/ecommerce-seo-optimizer/",
+        "type": 301
+      }
+    ],
     "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|gif|webp|svg|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=604800, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=86400"
+          }
+        ]
+      },
+      {
+        "source": "/llms.txt",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600"
+          }
+        ]
+      },
       {
         "source": "**",
         "headers": [
@@ -19,25 +150,8 @@
             "value": "SAMEORIGIN"
           },
           {
-            "key": "X-XSS-Protection",
-            "value": "1; mode=block"
-          },
-          {
             "key": "Referrer-Policy",
             "value": "strict-origin-when-cross-origin"
-          },
-          {
-            "key": "Permissions-Policy",
-            "value": "camera=(), microphone=(), geolocation=()"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|woff2)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=31536000, immutable"
           }
         ]
       }
