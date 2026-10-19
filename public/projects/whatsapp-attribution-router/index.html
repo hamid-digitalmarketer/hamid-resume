@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Attribution Router - Turn WhatsApp Clicks into Trackable Leads</title>
+<meta name="description" content="WhatsApp Attribution Router is an open-source JavaScript and Python toolkit that captures UTM campaign parameters, generates attributed WhatsApp links, and syncs leads with Google Sheets and GoHighLevel.">
+
+<link rel="canonical" href="https://hamid-resume.web.app/projects/whatsapp-attribution-router/">
+<meta name="theme-color" content="#070b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muhammad Hamid - Digital Marketing Expert">
+<meta property="og:title" content="WhatsApp Attribution Router - Turn WhatsApp Clicks into Trackable Leads">
+<meta property="og:description" content="WhatsApp Attribution Router is an open-source JavaScript and Python toolkit that captures UTM campaign parameters, generates attributed WhatsApp links, and syncs leads with Google Sheets and GoHighLevel.">
+<meta property="og:url" content="https://hamid-resume.web.app/projects/whatsapp-attribution-router/">
+<meta property="og:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WhatsApp Attribution Router - Turn WhatsApp Clicks into Trackable Leads">
+<meta name="twitter:description" content="WhatsApp Attribution Router is an open-source JavaScript and Python toolkit that captures UTM campaign parameters, generates attributed WhatsApp links, and syncs leads with Google Sheets and GoHighLevel.">
+<meta name="twitter:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Lahore">
+<meta name="geo.position" content="31.5204;74.3587">
+<meta name="ICBM" content="31.5204, 74.3587">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://hamid-resume.web.app/#person","name":"Muhammad Hamid","url":"https://hamid-resume.web.app/","image":"https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp","jobTitle":"Digital Marketing Expert & MarTech Engineer","address":{"@type":"PostalAddress","streetAddress":"Bahria Complex, Mall Road","addressLocality":"Lahore","addressRegion":"Punjab","postalCode":"54000","addressCountry":"PK"},"alumniOf":[{"@type":"EducationalOrganization","name":"University of the Punjab","sameAs":"https://www.pu.edu.pk/"},{"@type":"EducationalOrganization","name":"Punjab Board of Technical Education, Lahore"}],"knowsAbout":["Search Engine Optimization (SEO)","Technical SEO","Local SEO","Generative Engine Optimization (GEO)","Google Ads & PPC Management","Meta Ads & Paid Social","Conversion Tracking & Server-Side CAPI","WordPress & WooCommerce Development","Shopify E-Commerce Optimization","Core Web Vitals & Web Performance","Python MarTech Automation","n8n Workflow Automation","Marketing Analytics & Attribution"],"sameAs":["https://github.com/hamid-digitalmarketer","https://www.linkedin.com/in/muhammad-hamid-digital-marketing"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://hamid-resume.web.app/#website","name":"Muhammad Hamid - Professional Digital Marketing & MarTech Portfolio","url":"https://hamid-resume.web.app/","inLanguage":"en","publisher":{"@id":"https://hamid-resume.web.app/#person"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hamid-resume.web.app/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://hamid-resume.web.app/projects/"},{"@type":"ListItem","position":3,"name":"whatsapp-attribution-router","item":"https://hamid-resume.web.app/projects/whatsapp-attribution-router/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://hamid-resume.web.app/projects/whatsapp-attribution-router/#software","name":"WhatsApp Attribution Router","url":"https://hamid-resume.web.app/projects/whatsapp-attribution-router/","applicationCategory":"BusinessApplication","operatingSystem":"Cross-platform / Browser / Python FastAPI","description":"JavaScript and Python toolkit for UTM-based WhatsApp lead attribution, Google Sheets logging, and GoHighLevel CRM integration.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://github.com/hamid-digitalmarketer/whatsapp-attribution-router/releases/tag/v1.0.0","author":{"@id":"https://hamid-resume.web.app/#person"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a WhatsApp button click prove that a conversation took place?","acceptedAnswer":{"@type":"Answer","text":"No. When a visitor clicks a WhatsApp button, the browser opens WhatsApp with prefilled text. The user has full control to edit, delete, or choose not to send the message. WhatsApp Attribution Router records this as an unconfirmed_click, and full lead attribution is established when the lead sends a message and is confirmed in your CRM."}},{"@type":"Question","name":"How does WhatsApp Attribution Router handle direct traffic visits?","acceptedAnswer":{"@type":"Answer","text":"By default, when a visitor navigates directly between pages on the website without UTM parameters, the router preserves the previously established campaign attribution instead of incorrectly overwriting it with blank direct data."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation"><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li><li><a class="nav-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">WhatsApp</a></li></ul></nav>
+  </div>
+</header>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<main id="main">
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Home</a></li><li><a href="../../projects/index.html">Projects</a></li><li aria-current="page">whatsapp-attribution-router</li></ol></nav>
+      <h1>WhatsApp Attribution Router - Turn WhatsApp Clicks into Trackable Leads</h1>
+      <p class="lead">Open-source JavaScript and Python toolkit that captures campaign UTM parameters, generates attributed WhatsApp click-to-chat links, and syncs leads with Google Sheets and GoHighLevel CRM.</p>
+      <div class="project-actions">
+        <p class="no-demo-note">Open-source release v1.0.0 with 32 automated tests and 100% clean CI pipeline.</p>
+        <p><a class="btn btn-ghost" href="https://github.com/hamid-digitalmarketer/whatsapp-attribution-router" target="_blank" rel="noopener noreferrer">View Source on GitHub →</a></p>
+        <a class="btn btn-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20WhatsApp%20Attribution%20Router%20and%20would%20like%20to%20discuss%20lead%20tracking." target="_blank" rel="noopener">Discuss This Project on WhatsApp</a>
+      </div>
+      <p class="project-meta"><span class="pill">Analytics &amp; Tracking</span><span class="pill">AI &amp; Automation</span><span class="pill">Web Development</span></p>
+    </div>
+  </section>
+
+  <article class="project-content">
+    <div class="container article-body">
+      <h2>The Attribution Blind Spot in WhatsApp Marketing</h2>
+      <p>Performance marketing agencies and advertisers spend thousands on Meta Ads (Click-to-WhatsApp) and Google Search Ads. However, the moment a prospect leaves a landing page and jumps into the WhatsApp messaging interface, standard web analytics break into a complete black box. Sales teams have no visibility into which ad variant or keyword drove the conversation, and advertising algorithms optimize blindly on unconfirmed clicks rather than qualified leads.</p>
+
+      <h2>The Solution Architecture</h2>
+      <p><strong>WhatsApp Attribution Router</strong> resolves this tracking disconnect with a hybrid client-server workflow:</p>
+      <ul>
+        <li><strong>Client-Side Parameter Capture:</strong> Captures and normalizes <code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>utm_content</code>, <code>utm_term</code>, <code>gclid</code>, and <code>fbclid</code> in a privacy-conscious browser storage layer (sessionStorage, localStorage, or memory-only).</li>
+        <li><strong>Dynamic WhatsApp Message Templating:</strong> Generates official WhatsApp click-to-chat URLs (<code>https://wa.me/923167417135?text=...</code>) containing sanitized campaign references and an opaque lead token (<code>lead_ref</code>).</li>
+        <li><strong>Server-Side Python Gateway:</strong> A lightweight FastAPI backend receives click events via <code>navigator.sendBeacon</code>, enforces 48-hour event deduplication and IP rate limiting, and forwards records to Google Sheets API v4 and GoHighLevel CRM.</li>
+        <li><strong>Zero Ghost Contacts:</strong> Respects privacy controls by recording anonymous clicks without creating fake contacts in CRM systems, deferring contact synchronization until genuine customer details exist.</li>
+      </ul>
+
+      <h2>Key Features &amp; Engineering Highlights</h2>
+      <ul>
+        <li><strong>Lightweight Vanilla JavaScript:</strong> Under 4 KB minified with zero runtime dependencies.</li>
+        <li><strong>Configurable Attribution Models:</strong> Supports First Touch, Last Touch, and Multi-Touch attribution states with direct traffic preservation.</li>
+        <li><strong>Pre-Built Integrations:</strong> Official Google Sheets API v4 append rows, GoHighLevel LeadConnector v2 API with custom fields, and HMAC-signed generic webhooks.</li>
+        <li><strong>Complete Test Coverage:</strong> 13 Node.js test cases, 19 Pytest integration tests, and 100% clean Ruff linting verified in GitHub Actions.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions</h2>
+      <details class="faq-item">
+        <summary>Does a WhatsApp button click prove that a conversation took place?</summary>
+        <p>No. When a visitor clicks a WhatsApp button, the browser opens WhatsApp with prefilled text. The user has full control to edit, delete, or choose not to send the message. WhatsApp Attribution Router records this as an unconfirmed_click, and full lead attribution is established when the lead sends a message and is confirmed in your CRM.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does WhatsApp Attribution Router handle direct traffic visits?</summary>
+        <p>By default, when a visitor navigates directly between pages on the website without UTM parameters, the router preserves the previously established campaign attribution instead of incorrectly overwriting it with blank direct data.</p>
+      </details>
+    </div>
+  </article>
+
+  <section class="section cta-band">
+    <div class="container text-center">
+      <h2>Need WhatsApp Lead Attribution for Your Campaigns?</h2>
+      <p>I help digital marketing agencies, real estate developers, and e-commerce brands deploy server-side tracking, UTM attribution gateways, and automated CRM syncs to measure true advertising ROI.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20WhatsApp%20Attribution%20Router%20and%20would%20like%20to%20discuss%20lead%20tracking%20for%20my%20business." target="_blank" rel="noopener">Contact Me on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-brand">Muhammad Hamid</p>
+      <p class="footer-tagline">Digital Marketing Expert &amp; MarTech Engineer · Lahore, Pakistan</p>
+    </div>
+    <nav aria-label="Footer navigation"><ul class="footer-links"><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li></ul></nav>
+    <div class="footer-contact">
+      <p><a class="wa-link" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">+92 316 7417135</a></p>
+      <p class="footer-note">WhatsApp is my primary and exclusive contact method.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Muhammad Hamid. Built for speed, accessibility, and conversion.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener" aria-label="Contact Muhammad Hamid on WhatsApp">💬<span class="sr-only">WhatsApp</span></a>
+
+<script src="../../js/main.js" defer></script>
+</body>
+</html>
