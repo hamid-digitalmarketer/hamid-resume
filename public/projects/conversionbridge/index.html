@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConversionBridge - Privacy-First Server-Side Conversion Tracking Gateway</title>
+<meta name="description" content="ConversionBridge is an open-source Python and Firebase gateway collecting consent-aware first-party conversion events and forwarding them to Meta CAPI and GA4.">
+
+<link rel="canonical" href="https://hamid-resume.web.app/projects/conversionbridge/">
+<meta name="theme-color" content="#070b14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muhammad Hamid - Digital Marketing Expert">
+<meta property="og:title" content="ConversionBridge - Privacy-First Server-Side Conversion Tracking Gateway">
+<meta property="og:description" content="ConversionBridge is an open-source Python and Firebase gateway collecting consent-aware first-party conversion events and forwarding them to Meta CAPI and GA4.">
+<meta property="og:url" content="https://hamid-resume.web.app/projects/conversionbridge/">
+<meta property="og:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ConversionBridge - Privacy-First Server-Side Conversion Tracking Gateway">
+<meta name="twitter:description" content="ConversionBridge is an open-source Python and Firebase gateway collecting consent-aware first-party conversion events and forwarding them to Meta CAPI and GA4.">
+<meta name="twitter:image" content="https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Lahore">
+<meta name="geo.position" content="31.5204;74.3587">
+<meta name="ICBM" content="31.5204, 74.3587">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://hamid-resume.web.app/#person","name":"Muhammad Hamid","url":"https://hamid-resume.web.app/","image":"https://hamid-resume.web.app/images/muhammad-hamid-headshot.webp","jobTitle":"Digital Marketing Expert & MarTech Engineer","address":{"@type":"PostalAddress","streetAddress":"Bahria Complex, Mall Road","addressLocality":"Lahore","addressRegion":"Punjab","postalCode":"54000","addressCountry":"PK"},"alumniOf":[{"@type":"EducationalOrganization","name":"University of the Punjab","sameAs":"https://www.pu.edu.pk/"},{"@type":"EducationalOrganization","name":"Punjab Board of Technical Education, Lahore"}],"knowsAbout":["Search Engine Optimization (SEO)","Technical SEO","Local SEO","Generative Engine Optimization (GEO)","Google Ads & PPC Management","Meta Ads & Paid Social","Conversion Tracking & Server-Side CAPI","WordPress & WooCommerce Development","Shopify E-Commerce Optimization","Core Web Vitals & Web Performance","Python MarTech Automation","n8n Workflow Automation","Marketing Analytics & Attribution"],"sameAs":["https://github.com/hamid-digitalmarketer","https://www.linkedin.com/in/muhammad-hamid-digital-marketing"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://hamid-resume.web.app/#website","name":"Muhammad Hamid - Professional Digital Marketing & MarTech Portfolio","url":"https://hamid-resume.web.app/","inLanguage":"en","publisher":{"@id":"https://hamid-resume.web.app/#person"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hamid-resume.web.app/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://hamid-resume.web.app/projects/"},{"@type":"ListItem","position":3,"name":"conversionbridge","item":"https://hamid-resume.web.app/projects/conversionbridge/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://hamid-resume.web.app/projects/conversionbridge/#software","name":"ConversionBridge","url":"https://hamid-resume.web.app/projects/conversionbridge/","applicationCategory":"BusinessApplication","operatingSystem":"Cross-platform / Firebase Functions v2 / Docker","description":"Privacy-first server-side conversion tracking gateway forwarding first-party conversion events to Meta Conversions API and Google Analytics 4 Measurement Protocol.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://github.com/hamid-digitalmarketer/conversionbridge/releases/tag/v1.0.0","author":{"@id":"https://hamid-resume.web.app/#person"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does ConversionBridge handle user privacy and consent?","acceptedAnswer":{"@type":"Answer","text":"ConversionBridge operates on a fail-closed privacy policy. Outbound events to Meta require explicit advertising consent, while GA4 requires analytics consent. If consent is absent or denied, events are blocked before transmission."}},{"@type":"Question","name":"How does event deduplication prevent double-counting between browser pixels and server events?","acceptedAnswer":{"@type":"Answer","text":"ConversionBridge enforces identical event_id and event_name identifiers across browser and server payloads, allowing Meta and Google to merge matching events within a 48-hour deduplication window."}}]}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation"><ul><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li><li><a class="nav-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">WhatsApp</a></li></ul></nav>
+  </div>
+</header>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<main id="main">
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Home</a></li><li><a href="../../projects/index.html">Projects</a></li><li aria-current="page">conversionbridge</li></ol></nav>
+      <h1>ConversionBridge - Privacy-First Server-Side Conversion Tracking Gateway</h1>
+      <p class="lead">Open-source Python and Firebase gateway for collecting consent-aware first-party conversion events and dispatching them to Meta Conversions API and Google Analytics 4.</p>
+      <div class="project-actions">
+        <p class="no-demo-note">Open-source release v1.0.0 with 38 passing unit tests and GitHub Actions CI.</p>
+        <p><a class="btn btn-ghost" href="https://github.com/hamid-digitalmarketer/conversionbridge" target="_blank" rel="noopener noreferrer">View Source on GitHub →</a></p>
+        <a class="btn btn-wa" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20ConversionBridge%20and%20would%20like%20to%20discuss%20server-side%20tracking." target="_blank" rel="noopener">Discuss This Project on WhatsApp</a>
+      </div>
+      <p class="project-meta"><span class="pill">Analytics &amp; Tracking</span><span class="pill">AI &amp; Automation</span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>ConversionBridge is a production-grade conversion tracking gateway designed to combat the signal loss caused by iOS App Tracking Transparency (ATT), ad-blockers, and third-party cookie phaseouts. By capturing conversions on your first-party backend and forwarding them directly to Meta Conversions API (Graph API v20.0) and Google Analytics 4 (Measurement Protocol), ConversionBridge recovers lost conversion data, improves ad algorithm optimization, and preserves strict compliance with user privacy choices.</p>
+      <p>Built with Python 3.11/3.12 and FastAPI, it features a dual runtime supporting both traditional containerized deployments (Docker/Cloud Run) and serverless execution on <strong>Firebase Cloud Functions v2</strong>.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Problem It Solves</h2>
+      <p>Browser-only tracking pixels regularly lose 15% to 30% of conversions because users close confirmation tabs, run network ad-blockers, or use privacy-focused browsers that restrict client-side scripts. Furthermore, client-side scripts risk exposing proprietary access tokens and often send unhashed PII into external networks.</p>
+      <h3>Target Users</h3>
+      <ul class="check-list">
+        <li>Performance Marketing Agencies managing Meta &amp; Google Ads at scale</li>
+        <li>E-Commerce Brands (Shopify, WooCommerce, Custom Storefronts) recovering dropped purchase events</li>
+        <li>Lead-Generation Businesses requiring resilient CRM offline conversion sync</li>
+        <li>SaaS Platforms tracking trial signups and subscription renewals server-side</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Key Features</h2>
+      <ul class="check-list">
+        <li><strong>Multi-Channel Server-to-Server Dispatch:</strong> Accepts a single unified event payload and concurrently dispatches to Meta CAPI and GA4 Measurement Protocol.</li>
+        <li><strong>Fail-Closed Consent Engine:</strong> Separates advertising and analytics consent. Events without explicit consent are blocked before outbound network transmission.</li>
+        <li><strong>Automated SHA-256 PII Normalization:</strong> Strips whitespace, standardizes casing, and hashes customer emails, phones, and addresses per platform specifications without double-hashing pre-hashed inputs.</li>
+        <li><strong>48-Hour Deduplication Window:</strong> Uses namespaced keys in Firestore or in-memory storage to prevent accidental duplicate retries while preserving cross-channel delivery.</li>
+        <li><strong>Dry-Run Test Endpoint:</strong> Dedicated <code>POST /api/v1/events/test</code> route verifies event payloads, schema compliance, and consent rules with redacted wire-format previews without sending live data.</li>
+        <li><strong>Multi-Layer Security Perimeter:</strong> API key and Bearer token authentication, sliding-window rate limiting (120 req/min), body size limits (512 KB), and automated secret redaction.</li>
+        <li><strong>100% CI Test Coverage:</strong> 38 automated unit and integration tests passing across Python 3.11 and 3.12 on GitHub Actions.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Technologies</h2>
+      <ul class="tech-list">
+        <li class="tech-item">Python 3.11 / 3.12</li>
+        <li class="tech-item">FastAPI</li>
+        <li class="tech-item">Firebase Cloud Functions v2</li>
+        <li class="tech-item">Google Cloud Firestore</li>
+        <li class="tech-item">Meta Conversions API (Graph API v20.0)</li>
+        <li class="tech-item">GA4 Measurement Protocol</li>
+        <li class="tech-item">HTTPX Async</li>
+        <li class="tech-item">Pytest &amp; Ruff</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Contribution &amp; Skills</h2>
+      <p>Sole architect and developer. Engineered the complete FastAPI gateway, Meta CAPI adapter, GA4 Measurement Protocol integration, fail-closed consent engine, Firestore deduplication backend, and the 38-test automated suite.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Install &amp; Usage</h2>
+      <div class="install-block">
+        <h3>Clone &amp; Install</h3>
+        <pre><code>git clone https://github.com/hamid-digitalmarketer/conversionbridge.git
+cd conversionbridge
+pip install -r requirements-dev.txt</code></pre>
+      </div>
+      <div class="install-block">
+        <h3>Run Local Server</h3>
+        <pre><code>cp .env.example .env
+python -m uvicorn app.main:app --port 8080 --reload</code></pre>
+      </div>
+      <div class="install-block">
+        <h3>Submit a Test Event</h3>
+        <pre><code>curl -X POST http://localhost:8080/api/v1/events/test \
+  -H "Content-Type: application/json" \
+  -d @examples/sample_event.json</code></pre>
+      </div>
+      <p><a href="https://github.com/hamid-digitalmarketer/conversionbridge" target="_blank" rel="noopener noreferrer">Full documentation lives in the repository README →</a></p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details class="faq-item">
+        <summary>How does ConversionBridge handle user privacy and consent?</summary>
+        <p>ConversionBridge operates on a fail-closed privacy policy. Outbound events to Meta require explicit advertising consent, while GA4 requires analytics consent. If consent is absent or denied, events are blocked before transmission.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does event deduplication prevent double-counting between browser pixels and server events?</summary>
+        <p>ConversionBridge enforces identical event_id and event_name identifiers across browser and server payloads, allowing Meta and Google to merge matching events within a 48-hour deduplication window.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Related Projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="../conversion-tracking-doctor/" data-project-card><span class="pc-media"><img width="1376" height="768" src="../../images/projects/conversion-tracking-doctor.jpg" alt="Screenshot of the conversion-tracking-doctor project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Analytics &amp; Tracking</span><h3>conversion-tracking-doctor</h3><p>Diagnose broken conversion tracking and data quality across GA4, Ads and Meta CAPI.</p></span></a>
+        <a class="project-card" href="../meta-lead-quality-analyzer/" data-project-card><span class="pc-media"><img width="1376" height="768" src="../../images/projects/meta-lead-quality-analyzer.jpg" alt="Screenshot of the meta-lead-quality-analyzer project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Meta Ads</span><h3>meta-lead-quality-analyzer</h3><p>Score Meta lead quality and feed offline conversions back to the algorithm.</p></span></a>
+        <a class="project-card" href="../ppc-waste-detector/" data-project-card><span class="pc-media"><img width="1376" height="768" src="../../images/projects/ppc-waste-detector.jpg" alt="Screenshot of the ppc-waste-detector project" loading="lazy"></span><span class="pc-body"><span class="pc-cat">Google Ads &amp; PPC</span><h3>ppc-waste-detector</h3><p>Find wasted ad spend: query bleed, cannibalization, junk placements and click fraud.</p></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container">
+      <h2>Need Server-Side Tracking for Your Business?</h2>
+      <p>I build custom first-party conversion tracking gateways, Meta CAPI setups, and resilient measurement architectures. Start the conversation on WhatsApp.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20ConversionBridge%20and%20would%20like%20to%20discuss%20server-side%20tracking." target="_blank" rel="noopener">Contact Me on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="../../index.html">MH<span class="logo-dot">.</span></a>
+      <p class="footer-tag">Digital Marketing Expert &amp; MarTech Engineer — SEO, Google Ads, Meta Ads, GEO &amp; Web Development.</p>
+    </div>
+    <nav aria-label="Footer navigation"><ul class="footer-links"><li><a href="../../index.html">Home</a></li><li><a href="../../about/index.html">About</a></li><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../skills/index.html">Skills</a></li><li><a href="../../services/index.html">Services</a></li><li><a href="../../contact/index.html">Contact</a></li></ul></nav>
+    <div class="footer-contact">
+      <p><strong>Contact via WhatsApp</strong></p>
+      <p><a class="wa-link" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20a%20project." target="_blank" rel="noopener">+92 316 7417135</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Muhammad Hamid. Built with a passion for measurable growth.</p>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20am%20interested%20in%20ConversionBridge%20and%20would%20like%20to%20discuss%20server-side%20tracking." target="_blank" rel="noopener" aria-label="Contact Muhammad Hamid on WhatsApp">💬<span class="sr-only">WhatsApp</span></a>
+<script src="../../js/main.js" defer></script>
+</body>
+</html>

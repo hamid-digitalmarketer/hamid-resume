@@ -6,7 +6,7 @@
 
 - [Homepage](https://hamid-resume.web.app/): Resume, experience, certifications, FAQ
 - [About](https://hamid-resume.web.app/about/): Career summary and experience timeline
-- [Projects](https://hamid-resume.web.app/projects/): Directory of all 13 open-source projects
+- [Projects](https://hamid-resume.web.app/projects/): Directory of all 14 open-source projects
 - [Skills](https://hamid-resume.web.app/skills/): Skill map and tools
 - [Services](https://hamid-resume.web.app/services/): SEO, Google Ads, Meta Ads, web development
 - [Contact](https://hamid-resume.web.app/contact/): WhatsApp-only contact
@@ -14,6 +14,7 @@
 ## Projects (open source on GitHub)
 GitHub profile: https://github.com/hamid-digitalmarketer
 
+- [conversionbridge](https://hamid-resume.web.app/projects/conversionbridge/): Server-side conversion tracking gateway forwarding first-party events to Meta Conversions API (CAPI) and GA4 Measurement Protocol with explicit consent, SHA-256 PII hashing, and deduplication. Repository: https://github.com/hamid-digitalmarketer/conversionbridge
 - [dynamic-schema-generator](https://hamid-resume.web.app/projects/dynamic-schema-generator/): Enterprise WordPress plugin generating linked Schema.org @graph JSON-LD, Elementor FAQ extraction and NAP management. Repository: https://github.com/hamid-digitalmarketer/dynamic-schema-generator
 - [searchpulse-ai](https://hamid-resume.web.app/projects/searchpulse-ai/): Google Search Console intelligence platform: striking-distance opportunities, traffic drop root-cause diagnostics and content decay. Repository: https://github.com/hamid-digitalmarketer/searchpulse-ai
 - [hamid-resume](https://hamid-resume.web.app/projects/hamid-resume/): The official resume and personal brand website you are viewing. Repository: https://github.com/hamid-digitalmarketer/hamid-resume Live demo: https://hamid-resume.web.app/
